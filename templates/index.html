@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<svg
+        class="absolute w-screen z-bg h-2-screen-h top-1/2-screen-h"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        >
+        <polygon
+            class="fill-current text-secondary-m-40"
+            points="0,0 100,40 100,100 0, 60"
+            />
+</svg>
+
+<div class="absolute top-0 w-screen">
+    <div class="flex flex-col h-screen mx-auto md:container">
+        <div class="h-32 md:h-16"></div>
+        <div class="flex flex-col items-center justify-center flex-1 md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <div class="w-48 h-48">
+                <img
+                    class="min-w-full min-h-full"
+                    src="{{get_url(path='imgs/mugshot.png')}}"
+                    alt="Gijs Burghoorn" />
+            </div>
+            <div class="flex-1 max-w-xl p-8 bg-primary-m-60 font-nav-links">
+                <p class="text-3xl">
+                    Hi! I’m Gijs
+                </p>
+
+                <p class="text-2xl">
+                    I would like to make everybody enthusiastic about
+                    everyday Computer Science and Mathematics. Are you
+                    interested too?
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center h-16">
+            <img
+                class="h-16 p-6 cursor-pointer"
+                src="{{get_url(path='svg/ScrollArrow.svg')}}"
+                alt="Go Down" />
+        </div>
+    </div>
+</div>
+<div class="absolute w-screen top-screen-h">
+    <div class="container flex flex-col h-screen mx-auto">
+    </div>
+</div>
+
+{% endblock content %}
