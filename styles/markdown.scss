@@ -1,0 +1,60 @@
+.markdown {
+  position: relative;
+  @apply text-base font-content;
+}
+
+.markdown h1 {
+  @apply mb-4 text-4xl font-header;
+}
+
+.markdown h2 {
+  @apply mt-6 text-3xl font-header;
+}
+
+.markdown h3 {
+  @apply mt-4 text-2xl font-header;
+}
+
+.markdown h4 {
+  @apply mt-2 text-xl font-header;
+}
+
+.markdown h5 {
+  @apply text-lg font-header;
+}
+
+.markdown h6 {
+  @apply text-base font-header;
+}
+
+.markdown em {
+  @apply italic;
+}
+
+.markdown strong {
+  @apply font-bold;
+}
+
+.markdown del {
+  @apply line-through;
+}
+
+.markdown a {
+  @apply underline text-primary-p-20;
+}
+
+.markdown pre {
+  @apply p-4 my-4 text-base font-verb;
+}
+
+.markdown blockquote::before {
+  content: ">";
+  left: 0;
+  @apply absolute mx-4 text-xl font-verb text-primary-p-20;
+}
+.markdown blockquote {
+  @apply py-4 pl-12 my-4 border-2 border-l-0 border-r-0 font-nav-links border-primary-p-20;
+}
+.markdown img {
+  @apply max-w-full my-4;
+}

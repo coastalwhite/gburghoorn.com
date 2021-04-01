@@ -1,17 +1,21 @@
-# The URL the site will be built for
 base_url = "https://gburghoorn.com"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+title = "GBurghoorn"
+description = "Hi!"
 
-# Whether to build a search index to be used later on by a JavaScript library
+default_language = "en"
+
+compile_sass = false
+
 build_search_index = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-highlight_theme = "base16-ocean-light"
+highlight_code = false
+
+taxonomies = [
+    {name = "tags", feed = true}
+]
 
 [extra]
-# Put all your custom variables here
+keywords = ["computers", "security", "math"]
+author = "Gijs Burghoorn"

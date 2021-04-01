@@ -1,19 +1,18 @@
 {
-  "name": "gburghoorn",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "build": "postcss styles/styles.css --dir static/styles --no-map",
-    "watch": "postcss styles/styles.css --dir static/styles --watch --no-map"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.8",
-    "tailwindcss": "^2.0.4"
-  },
-  "dependencies": {
-    "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.0"
-  }
+    "name": "gburghoorn",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "postcss styles/styles.scss --output static/styles/styles.css --no-map",
+        "watch": "postcss styles/styles.scss --output static/styles/styles.css --watch --no-map"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.5",
+        "postcss": "^8.2.8",
+        "postcss-cli": "^8.3.1",
+        "postcss-import": "^14.0.0",
+        "precss": "^4.0.0",
+        "tailwindcss": "^2.0.4"
+    }
 }

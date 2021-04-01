@@ -1,5 +1,21 @@
-{% extends 'base.html' %} {% block content %}
-<div class="container mx-auto mt-20">
-  <div class="markdown">{{ page.content | safe }}</div>
+{% extends 'base.html' %}
+
+{% block header %}
+<div class="container px-8 mx-auto">
+    <div class="h-24 md:h-24"></div>
+    <h1 class="text-4xl font-header">{{ page.title }}</h1>
+    <h2 class="text-xl font-header">{{ page.date | date(format="%v") }}</h1>
+
+    {% if page.taxonomies %}
+    {{ macros::showtags(tags=page.taxonomies.tags) }}
+    {% endif %}
 </div>
-{% endblock content %}
+{% endblock header %}
+
+{% block content %}
+<div class="px-8 mt-12">
+    <div class="markdown">
+        {{ page.content | safe }}
+    </div>
+</div>
+{% endblock %}

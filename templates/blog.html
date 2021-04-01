@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block header %}
+
+<div class="container px-8 mx-auto">
+    <div class="h-24 md:h-24"></div>
+    <h1 class="text-4xl font-header">{{ page.title }}</h1>
+    <div class="mt-4 mb-16 markdown">
+        {{ page.content | safe }}
+    </div>
+    <div class="flex flex-row w-full text-2xl font-nav-links selector-tags">
+        <div id="all-posts-btn" class="selector-tag-selected">
+            All
+        </div>
+        <div id="beginner-posts-btn">
+            Universal
+        </div>
+        <div id="advanced-posts-btn">
+            Computerese
+        </div>
+    </div>
+</div>
+
+{% endblock header %}
+
+{% block content %}
+
+{% set posts = get_section(path='posts/_index.md') %}
+
+<div id="posts-container" class="px-8">
+    {% for post in posts.pages %}
+    <div class="
+                post-item
+                {% if 'universal' in post.taxonomies.tags %}beginner{% endif %}
+                {% if 'computerese' in post.taxonomies.tags %}advanced{% endif %}
+                ">
+        <a href="{{ post.permalink }}">
+            <h2 class="text-3xl font-header">
+                {{ post.title }}
+            </h2>
+            <h3 class="text-lg font-header">
+                {{ post.date | date(format="%v") }}
+            </h3>
+        </a>
+        {% if post.taxonomies.tags %}
+        {{ macros::showtags(tags=post.taxonomies.tags) }}
+        {% endif %}
+        <div class="my-2 markdown">
+            {% if post.summary %}
+            {{ post.summary | trim | safe }}
+            {% else %}
+            {{ post.description | safe}}
+            {% endif %}
+        </div>
+        <a class="underline font-nav-links text-primary-p-20" href="{{ post.permalink }}">
+            Read more...
+        </a>
+    </div>
+    {% endfor %}
+
+    <div id="empty-message" class="mt-8 text-center">
+        <h2 class="text-3xl font-content">
+            No articles yet...
+        </h2>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{get_url(path='scripts/blog-feed-filter.js')}}">
+</script>
+
+{% endblock content %}

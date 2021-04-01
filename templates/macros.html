@@ -1,0 +1,21 @@
+{% macro bgstripe(offset, height, points) %}
+<svg class="absolute {{ offset }} w-full z-bg {{ height }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <polygon class="fill-current dark:text-primary-p-80 text-secondary-m-40" points="{{ points }}" />
+</svg>
+{% endmacro bgstripe %}
+
+{% macro navlink(to, txt) %}
+<div class="my-2 select-none hover:underline md:my-0">
+    <a href="{{ config.base_url }}/{{ to }}">{{ txt }}</a>
+</div>
+{% endmacro navlink %}
+
+{% macro showtags(tags) %}
+<div class="flex flex-row flex-wrap space-x-2">
+    {% for tag in tags %}
+    <div class="px-2 text-sm border-2 dark:bg-primary-p-40 bg-primary font-header border-primary-p-40">
+        {{ tag | slugify }}
+    </div>
+    {% endfor %}
+</div>
+{% endmacro showtags %}

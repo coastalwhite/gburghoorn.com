@@ -1,0 +1,28 @@
+.selector-tags {
+    overflow-x: scroll;
+}
+
+.selector-tags::-webkit-scrollbar {
+    display: none;
+}
+
+.selector-tags {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.selector-tags div {
+    @apply pr-8 border-b-2 border-gray-900 dark:border-gray-100 cursor-pointer;
+}
+
+.selector-tag-selected {
+    @apply text-primary-p-20 dark:text-primary border-primary-p-20 dark:border-primary !important;
+}
+
+.post-item:first-of-type {
+    @apply pt-8;
+}
+
+.post-item {
+    @apply mt-12;
+}
