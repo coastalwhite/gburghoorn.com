@@ -42,4 +42,3 @@ jobs:
           target: ${{ secrets.SCP_PATH }}
           source: "public/*"
           strip_components: 1
-          rm: true
