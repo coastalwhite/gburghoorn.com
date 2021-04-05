@@ -20,14 +20,14 @@ category = "societal"
 +++
 
 Perhaps I am a bad loser, but I often find myself ranting about how "bad"
-certain games are. While most games are entertaining is some way, there are a
+certain games are. While most games are entertaining in some way, there are a
 lot of games which provide *zero depth* and can be figured out in a matter of
 minutes.  Games of which the optimal strategy or style of play exposes itself
-fairly easily. What follows is either totally inconsequential gameplay or one
-depends almost entirely on luck. One classic conceptual example is the game of
+easily. What follows is either totally inconsequential gameplay or one depends
+almost entirely on luck. One classic conceptual example is the game of
 Tic-Tac-Toe. {{ note(txt="Take a look at how to make Tic-Tac-Toe
-inconsequential", href="https://youtu.be/5n2aQ3UQu9Y", type="videosource") }}
-Learning one simple strategy can make Tic-Tac-Toe unlosable. More complex games
+inconsequential", href="https://youtu.be/5n2aQ3UQu9Y", type="videosource")
+}} Learning one simple strategy can make Tic-Tac-Toe unlosable. More complex games
 such as chess and go &mdash; which cannot be figured out within minutes &mdash;
 are not only interesting for a longer time, but also raise a lot of interesting
 intellectual questions because of their depth. Questions which can only be
@@ -44,18 +44,18 @@ All the cards in a game of set.
 A few weeks ago I was playing the card game
 [Set](https://en.wikipedia.org/wiki/Set_\(card_game\)) {{ note(txt="Play Set
 versus a computer", href="https://set.sunnus.nl/", type="demo") }} with one of
-my flatmates.  For everyone unfamiliar with this game: there are 81 cards
+my flatmates.  For everyone not familiar with this game: there are 81 cards
 containing with one, two or three of 1 of 3 different shapes (diamond, oval,
 wave), with 1 of 3 colours (red, green, purple) and 1 of 3 shadings (solid,
 dotted, open). All of these cards can be seen in {{ figure_ref(n=1) }}. The game
-start with 9 random cards on the table and the goal is to find a "set": a pair
+starts with 9 random cards on the table and the goal is to find a "set": a pair
 of three cards which of every of the four properties specified contains either
 three different variants of that type or three of the same variant of property.
 For example, for the set in {{ figure_ref(n=2) }} all cards contain the same 3
 shapes, but these shapes are all different, their shading is all different and
 the colour is all different. Thus this is a valid set. If there are no sets on
 the table you add a new random card and you repeat. Whilst this explanation may
-seems rather complicated, the actual game is rather simple to grasp. In contrast
+seem rather complicated, the actual game is rather simple to grasp. In contrast
 to most games, however, Set is based purely on skill. How fast can one go
 through all combinations of cards? Although there are some shortcuts one can
 take, in the end, it all comes down to who can focus for the longest time and
@@ -68,7 +68,7 @@ A set in the game of "Set".
 Whilst playing Set, we had some (we thought at the time) quite rare odds, and
 had to go all the way up until 14 cards for us finally get a possible set.
 Afterwards, my roommate &mdash; who is in no way a mathematician &mdash; asked
-the question of how many cards it would take to have always have a set within
+the question of how many cards it would take to always have a set within
 those cards. So we thought about, concluded our brains couldn't handle thinking
 about 4 properties with 3 options each and attempted to create the largest
 number of cards without a set. We hoped the intrinsic beauty of mathematics and
@@ -80,7 +80,7 @@ our disappointment &mdash; that our answer was incorrect (the actual answer is
 set problem](https://en.wikipedia.org/wiki/Cap_set).
 
 After reading about the cap set problem a bit, I was captivated by its solution.
-partly, because it involved subject matter from a university course I am
+Partly, because it involved subject matter from a university course I am
 currently following, but more so because of the beautiful visualization it
 relies on for its solution. So if you want to read about it on the wikipedia
 page, please do. But I want to go over it, because it shows us something about
@@ -89,12 +89,12 @@ mathematics which isn't taught in most schools.
 ## Visualizing Set
 
 So let us start with a simpler game, a game which only involves 9 cards. Each
-card having one, two or three of 1 of 3 shapes, but all cards are red are have a
+card having one, two or three of 1 of 3 shapes, but all cards are red and have a
 solid shading. Let us call this game "Subset" of which the cards can be seen in
 {{ figure_ref(n=3) }}. You can get a "Subset" by again getting three cards which
 for all properties either belong to different variations of that type or the
 same variation of that type. This is a way simpler game. So let us try to answer
-the same question for "Subset" as we posed for "Set": How many cards to can we
+the same question for "Subset" as we posed for "Set": How many cards can we
 have before we are guaranteed to have a "Subset"?
 
 {% figure(href='subset.png', alt='the cards of "Subset"') %}
@@ -102,11 +102,11 @@ All the cards of "Subset"
 {% end %}
 
 Asking this question even for the simpler game of "Subset" is quite overwhelming
-so we might ask whether there is similar problem to which we can (more easily)
+so we might ask whether there is a similar problem to which we can (more easily)
 find the answer. You may look at all the cards and put them in a 3 by 3 grid.
 After looking at this grid for a while you may notice something: all of the rows
 and columns are *subsets* as can be seen in {{ figure_ref(n=4) }}. Whilst this
-seems like a good start after looking a bit further you notice see that there
+seems like a good start after looking a bit further you notice that there
 are some *subsets* which aren't a row or column of the grid. Then after some
 more looking you might notice that *subsets* which aren't a row or column also
 have a pattern, as can be seen in {{ figure_ref(n=5) }}. This turns out to be
@@ -133,8 +133,8 @@ better, we are able to visualize our problem.
 
 {% figure(href='subset-simplified.png', alt='the pill-shaped sets of
 subset') %}
-A even more simplified grid of "Subset", all the red lines representing a some
-subset and other colour matching lines also representing one subset.
+A even more simplified grid of "Subset". All the red lines represent some
+subset and other lines with matching colours also represent one subset.
 {% end %}
 
 From just some trial and error, you can notice that you can only mark four dots
