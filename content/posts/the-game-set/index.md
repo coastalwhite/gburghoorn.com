@@ -8,7 +8,8 @@ breaking a subject apart into smaller more understandable more understandable ch
 The card game "Set" provides a nice example of how and why this can be used.\
 """
 
-date = 2021-04-04
+date = 2021-04-05
+updated = 2021-04-05
 
 [taxonomies]
 tags = ["education", "mathematics", "card games"]
@@ -42,23 +43,23 @@ All the cards in a game of set.
 
 A few weeks ago I was playing the card game
 [Set](https://en.wikipedia.org/wiki/Set_\(card_game\)) {{ note(txt="Play Set
-versus a computer", href="/", type="demo") }} with one of my flatmates.  For
-everyone unfamiliar with this game: there are 81 cards containing with one, two
-or three of 1 of 3 different shapes (diamond, oval, wave), with 1 of 3 colours
-(red, green, purple) and 1 of 3 shadings (solid, dotted, open). All of these
-cards can be seen in {{ figure_ref(n=1) }}. The game start with 9 random cards
-on the table and the goal is to find a "set": a pair of three cards which of
-every of the four properties specified contains either three different variants
-of that type or three of the same variant of property. For example, for the set
-in {{ figure_ref(n=2) }} all cards contain the same 3 shapes, but these shapes
-are all different, their shading is all different and the colour is all
-different. Thus this is a valid set. If there are no sets on the table you add a
-new random card and you repeat. Whilst this explanation may seems rather
-complicated, the actual game is rather simple to grasp. In contrast to most
-games, however, Set is based purely on skill. How fast can one go through all
-combinations of cards? Although there are some shortcuts one can take, in the
-end, it all comes down to who can focus for the longest time and find a set
-first.
+versus a computer", href="https://set.sunnus.nl/", type="demo") }} with one of
+my flatmates.  For everyone unfamiliar with this game: there are 81 cards
+containing with one, two or three of 1 of 3 different shapes (diamond, oval,
+wave), with 1 of 3 colours (red, green, purple) and 1 of 3 shadings (solid,
+dotted, open). All of these cards can be seen in {{ figure_ref(n=1) }}. The game
+start with 9 random cards on the table and the goal is to find a "set": a pair
+of three cards which of every of the four properties specified contains either
+three different variants of that type or three of the same variant of property.
+For example, for the set in {{ figure_ref(n=2) }} all cards contain the same 3
+shapes, but these shapes are all different, their shading is all different and
+the colour is all different. Thus this is a valid set. If there are no sets on
+the table you add a new random card and you repeat. Whilst this explanation may
+seems rather complicated, the actual game is rather simple to grasp. In contrast
+to most games, however, Set is based purely on skill. How fast can one go
+through all combinations of cards? Although there are some shortcuts one can
+take, in the end, it all comes down to who can focus for the longest time and
+find a set first.
 
 {% figure(href="a_set.png", alt="a set in the game set") %}
 A set in the game of "Set".
@@ -137,12 +138,18 @@ subset and other colour matching lines also representing one subset.
 {% end %}
 
 From just some trial and error, you can notice that you can only mark four dots
-without there being a line containing solely marked dots. So the minimum amount
-of cards for a *subset* to show up is five. We can now extend this problem to
-three properties &mdash; creating a new game also having different colours or
-shading &mdash; and we will notice that we can create a similar breakdown and
-visualization of our problem. This time containing a three dimensional grid.
-Then we can extend that problem with yet another property.
+without there being a line containing solely marked dots. For example, we can
+mark the 4 corner dots, without one of the lines of {{ figure_ref(n=4) }} or {{
+figure_ref(n=5) }} containing only marked dots. If you need to, look at the
+pictures for a second a try finding another set of for marked dots, which
+contains no fully marked lines. Because there is no combination of 5 marked
+dots, for which we don't have a marked line, and dots are analogous to cards
+and lines to sets, the minimum amount of cards for a *subset* to show up is
+five. We can now extend this problem to three properties &mdash; creating a
+new game also having different colours or shading &mdash; and we will notice
+that we can create a similar breakdown and visualization of our problem.
+This time containing a three dimensional grid.  Then we can extend that
+problem with yet another property.
 
 ## What we can learn from this?
 
@@ -229,7 +236,7 @@ solve problems are models and sub-problems and schools rarely (if ever) try
 to teach students to form or utilize these deliberately.
 
 > *Of course, I am simplifying a lot here. Education curricula are very
-> complicated and I am not a expert on education curricula. My perspective is
+> complicated and I am not an expert on education curricula. My perspective is
 > that of a student of the Dutch schooling system. I am assuming most points
 > also (partly) hold for most other Western schooling.*
 
