@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block main %}
+{% set about_page = get_page(path='about-me.md') %}
+<div class="flex flex-col max-w-4xl px-8 pt-16 mx-auto md:flex-row space-x-0 md:space-x-8 space-y-8 md:space-y-0">
+    <div class="flex flex-col items-center ">
+        <div class="w-32 h-32">
+            <img class="min-w-full min-h-full p-1 border-2 border-gray-900 rounded-full" src="{{get_url(path='imgs/mugshot.png')}}" alt="Gijs Burghoorn" />
+        </div>
+        <div class="text-xl font-header">
+            gburghoorn
+        </div>
+        <div class="my-4 text-center">
+            <div class="text-sm font-content w-72">
+                {{ about_page.description | safe}}
+            </div>
+            <a class="underline font-nav-links text-primary-p-20" href="{{ about_page.permalink }}">
+                About Me
+            </a>
+        </div>
+        <div class="flex flex-row mx-auto mt-2 space-x-2">
+            <a href="https://github.com/coastalwhite">
+                <img src="{{get_url(path='svg/github.svg')}}" />
+            </a>
+            <a href="{{ config.base_url ~ 'rss.xml' }}">
+                <img src="{{get_url(path='svg/rss.svg')}}" />
+            </a>
+        </div>
+    </div>
+    <div class="flex-1">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</div>
+{% endblock main %}

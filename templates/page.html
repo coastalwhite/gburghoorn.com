@@ -1,21 +1,77 @@
 {% extends 'base.html' %}
 
-{% block header %}
-<div class="container px-8 mx-auto">
-    <div class="h-24 md:h-24"></div>
-    <h1 class="text-4xl font-header">{{ page.title }}</h1>
-    <h2 class="text-xl font-header">{{ page.date | date(format="%v") }}</h1>
+{% block main %}
+<div class="max-w-3xl px-4 mx-auto">
+    <script type="text/javascript">
+        function toggleNote(noteNr){
+            var note = document.getElementById('note-' + noteNr.toString());
+            if (note.classList.contains('hidden')) {
+                note.classList.remove('hidden');
+            } else {
+                note.classList.add('hidden');
+            }
+        }
+    </script>
+    <a href="{{ config.base_url }}" class="absolute top-6 lg:fixed">
+        <div id="back-btn" class="flex w-16 h-16 align-middle rounded-full lg:relative lg:right-20 justify-items-center bg-primary-m-60 hover:opacity-100 transition-opacity">
+            <img class="w-8 h-8 m-auto select-none" src="{{get_url(path='svg/back.svg')}}" />
+        </div>
+    </a>
+    <div>
+        <div class="h-24 md:h-24"></div>
+        <h1 class="text-4xl font-header">{{ page.title }}</h1>
+        <h2 class="text-lg font-header">
+            Published on {{ page.date | date(format="%v") }}
+            {% if page.updated %}
+            -- Last updated on {{ page.date | date(format="%v") }}
+            {% endif %}
+        </h2>
 
-    {% if page.taxonomies %}
-    {{ macros::showtags(tags=page.taxonomies.tags) }}
-    {% endif %}
-</div>
-{% endblock header %}
+        {% if page.taxonomies %}
+        {{ macros::showtags(tags=page.taxonomies.tags) }}
+        {% endif %}
 
-{% block content %}
-<div class="px-8 mt-12">
-    <div class="markdown">
-        {{ page.content | safe }}
+        {% if page.toc %}
+        <!-- <div> -->
+        <!--     <div>Table of contents</div> -->
+        <!-- <ul> -->
+        <!--     {% for h1 in page.toc %} -->
+        <!--     <li> -->
+        <!--         <a href="{{h1.permalink | safe}}">{{ h1.title }}</a> -->
+        <!--         {% if h1.children %} -->
+        <!--         <ul> -->
+        <!--             {% for h2 in h1.children %} -->
+        <!--             <li> -->
+        <!--                 <a href="{{h2.permalink | safe}}">{{ h2.title }}</a> -->
+        <!--             </li> -->
+        <!--             {% endfor %} -->
+        <!--         </ul> -->
+        <!--         {% endif %} -->
+        <!--     </li> -->
+        <!--     {% endfor %} -->
+        <!-- </ul> -->
+        <!-- </div> -->
+        {% endif %}
     </div>
+
+    <div class="mt-12">
+        <div class="markdown">
+            {{ page.content | safe }}
+        </div>
+    </div>
+    <script type="text/javascript">
+        var backBtn = document.getElementById("back-btn");
+        function updateBackBtnOpacity() {
+            if (window.pageYOffset > 0) {
+                backBtn.classList.add("opacity-30");
+            } else {
+                backBtn.classList.remove("opacity-30");
+            }
+        }
+
+        window.addEventListener('scroll', function(){
+            updateBackBtnOpacity();
+        });
+    </script>
 </div>
 {% endblock %}

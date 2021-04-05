@@ -1,6 +1,6 @@
 .markdown {
   position: relative;
-  @apply text-base font-content;
+  @apply text-lg font-content;
 }
 
 .markdown h1 {
@@ -24,7 +24,8 @@
 }
 
 .markdown h6 {
-  @apply text-base font-header;
+  @apply text-base font-header mb-4;
+  margin-top: -1em;
 }
 
 .markdown em {
@@ -43,18 +44,28 @@
   @apply underline text-primary-p-20;
 }
 
+.markdown .no-style-a {
+  @apply no-underline text-black !important;
+}
+
 .markdown pre {
-  @apply p-4 my-4 text-base font-verb;
+  @apply p-4 text-xl font-verb overflow-x-scroll;
 }
 
 .markdown blockquote::before {
   content: ">";
   left: 0;
-  @apply absolute mx-4 text-xl font-verb text-primary-p-20;
+  @apply absolute text-xl font-verb text-primary-p-20;
 }
 .markdown blockquote {
-  @apply py-4 pl-12 my-4 border-2 border-l-0 border-r-0 font-nav-links border-primary-p-20;
+  @apply py-4 mb-4 pl-12 border-2 border-l-0 border-r-0 font-nav-links border-primary-p-20;
 }
 .markdown img {
-  @apply max-w-full my-4;
+  @apply max-w-full;
+}
+.markdown p:last-of-type {
+    @apply mb-0;
+}
+.markdown p {
+    @apply mb-4;
 }

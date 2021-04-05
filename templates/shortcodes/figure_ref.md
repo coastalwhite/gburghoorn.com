@@ -1,0 +1,1 @@
+[*Figure {{ n }}*](#figure-{{ n }})

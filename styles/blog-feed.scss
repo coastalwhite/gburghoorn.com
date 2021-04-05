@@ -12,7 +12,7 @@
 }
 
 .selector-tags div {
-    @apply pr-8 border-b-2 border-gray-900 dark:border-gray-100 cursor-pointer;
+    @apply px-1 border-b-2 border-gray-900 dark:border-gray-100 cursor-pointer;
 }
 
 .selector-tag-selected {
@@ -24,5 +24,9 @@
 }
 
 .post-item {
-    @apply mt-12;
+    @apply py-6 border-b-2 border-gray-300;
+}
+
+.post-item:last-of-type {
+    @apply border-b-0;
 }

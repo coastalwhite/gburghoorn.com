@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        content: ["Helvetica", ...defaultTheme.fontFamily.serif],
+        content: ["Georgia", ...defaultTheme.fontFamily.serif],
         "nav-links": ["Lato", ...defaultTheme.fontFamily.serif],
         verb: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono],
         header: ["Overpass Mono", ...defaultTheme.fontFamily.mono]

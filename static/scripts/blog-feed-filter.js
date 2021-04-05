@@ -6,8 +6,8 @@
  * March 31 2021
  */
 
-var beginnerClass = 'beginner';
-var advancedClass = 'advanced';
+var beginnerClass = 'societal';
+var advancedClass = 'computerese';
 
 var selectedTag = 'selector-tag-selected';
 

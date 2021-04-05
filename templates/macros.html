@@ -11,9 +11,9 @@
 {% endmacro navlink %}
 
 {% macro showtags(tags) %}
-<div class="flex flex-row flex-wrap space-x-2">
+<div class="flex flex-row flex-wrap">
     {% for tag in tags %}
-    <div class="px-2 text-sm border-2 dark:bg-primary-p-40 bg-primary font-header border-primary-p-40">
+    <div class="px-2 mr-2 text-sm border-2 dark:bg-primary-p-40 bg-primary font-header border-primary-p-40">
         {{ tag | slugify }}
     </div>
     {% endfor %}

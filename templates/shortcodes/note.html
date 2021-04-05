@@ -1,0 +1,22 @@
+<span class="inline">
+    <span class="lg:hidden" onclick="toggleNote({{ nth }})">
+        <img src="{{get_url(path='svg/info.svg')}}" class="inline h-4 ml-1" alt="More info" />
+    </span>
+    <span class="absolute right-0 hidden lg:inline lg:opacity-30">
+        <img src="{{get_url(path='svg/lg-info.svg')}}" class="relative w-4 ml-1 left-8 top-3" alt="More info" />
+    </span>
+    <span class="hidden lg:inline lg:right-0 lg:absolute lg:opacity-30" id="note-{{ nth }}">
+        <span class="relative lg:left-8 lg:bottom-6">
+            <a href="{{ href }}" class="block p-2 no-style-a lg:relative lg:left-full bg-primary-m-60 lg:bg-transparent ">
+                <span>
+                    <img class="inline" src="{{get_url(path='svg/note-icons/' ~
+                                type ~ '.svg')}}" alt="{{
+                    type }}" />
+                </span>
+                <span class="inline mt-2 text-sm break-words lg:block lg:w-36 font-header">
+                    {{ txt }}
+                </span>
+            </a>
+        </span>
+    </span>
+</span>

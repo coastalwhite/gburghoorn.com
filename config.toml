@@ -8,9 +8,11 @@ default_language = "en"
 compile_sass = false
 
 build_search_index = true
+smart_punctuation = true
 
 [markdown]
-highlight_code = false
+highlight_code = true
+highlight_theme = "base16-ocean-light"
 
 taxonomies = [
     {name = "tags", feed = true}

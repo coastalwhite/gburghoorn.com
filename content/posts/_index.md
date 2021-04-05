@@ -1,5 +1,8 @@
 +++
-title = "Blog Posts"
+title = "Posts"
 sort_by = "date"
-template = "post.html"
+render = false
+
+[extra]
+author = "Gijs Burghoorn"
 +++
