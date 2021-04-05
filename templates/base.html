@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="{% if lang %}{{ lang }}{% else %}{{ config.default_language }}{% endif %}">
+
 <head>
     {% set img_path = "imgs/mugshot.png" %}
 
@@ -51,7 +52,7 @@
     <script type="text/javascript" src="{{get_url(path='scripts/touch-friendly-clicks.js')}}"></script>
 
     <!-- Analytics -->
-    <script data-goatcounter="https://gburghoorn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://stats.gburghoorn.com/count" async src="//stats.gburghoorn.com/count.js"></script>
 
     {% block head %}
     {% endblock head %}
