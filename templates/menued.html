@@ -5,7 +5,7 @@
 <div class="flex flex-col max-w-4xl px-8 pt-16 mx-auto md:flex-row space-x-0 md:space-x-8 space-y-8 md:space-y-0">
     <div class="flex flex-col items-center ">
         <div class="w-32 h-32">
-            <img class="min-w-full min-h-full p-1 border-2 border-gray-900 rounded-full" src="{{get_url(path='imgs/mugshot.png')}}" alt="Gijs Burghoorn" />
+            <img class="min-w-full min-h-full p-1 border-2 border-gray-900 rounded-full" src="{{get_url(path='imgs/mugshot.png',cachebust=true)}}" alt="Gijs Burghoorn" />
         </div>
         <div class="text-xl font-header">
             gburghoorn
@@ -20,10 +20,10 @@
         </div>
         <div class="flex flex-row mx-auto mt-2 space-x-2">
             <a href="https://github.com/coastalwhite">
-                <img src="{{get_url(path='svg/github.svg')}}" />
+                <img src="{{get_url(path='svg/github.svg',cachebust=true)}}" />
             </a>
-            <a href="{{ config.base_url ~ 'rss.xml' }}">
-                <img src="{{get_url(path='svg/rss.svg')}}" />
+            <a href="{{ config.base_url ~ '/rss.xml' }}">
+                <img src="{{get_url(path='svg/rss.svg',cachebust=true)}}" />
             </a>
         </div>
     </div>

@@ -40,16 +40,17 @@
     <meta property="og:url" content="{{ current_url }}" />
     <meta property="og:title" content="{{ meta_title }}" />
     <meta property="og:description" content="{{ meta_description }}" />
-    <meta property="og:image" content="{{get_url(path=img_path)}}" />
+    <meta property="og:image" content="{{get_url(path=img_path,cachebust=true)}}" />
 
     <link rel="alternate" type="application/rss+xml" title="RSS feed for
     gburghoorn.com" href="{{ config.base_url | safe }}/rss.xml" />
 
     <!-- Stylesheets -->
-    <link href="{{get_url(path='styles/styles.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{get_url(path='styles/styles.css',cachebust=true)}}" rel="stylesheet" type="text/css" />
 
     <!-- Library Scripts -->
-    <script type="text/javascript" src="{{get_url(path='scripts/touch-friendly-clicks.js')}}"></script>
+    <script type="text/javascript"
+        src="{{get_url(path='scripts/touch-friendly-clicks.js',cachebust=true)}}"></script>
 
     <!-- Analytics -->
     <script data-goatcounter="https://stats.gburghoorn.com/count" async src="//stats.gburghoorn.com/count.js"></script>

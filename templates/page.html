@@ -14,7 +14,8 @@
     </script>
     <a href="{{ config.base_url }}" class="absolute top-6 lg:fixed">
         <div id="back-btn" class="flex w-16 h-16 align-middle rounded-full lg:relative lg:right-20 justify-items-center bg-primary-m-60 hover:opacity-100 transition-opacity">
-            <img class="w-8 h-8 m-auto select-none" src="{{get_url(path='svg/back.svg')}}" />
+            <img class="w-8 h-8 m-auto select-none"
+            src="{{get_url(path='svg/back.svg',cachebust=true)}}" />
         </div>
     </a>
     <div>
