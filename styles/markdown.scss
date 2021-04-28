@@ -1,71 +1,174 @@
 .markdown {
   position: relative;
-  @apply text-lg font-content;
+  @apply text-lg;
+  @apply font-content;
+}
+
+/* Base spacing between paragraph */
+.markdown-p-spacing {
+  @apply mb-4;
+}
+
+.markdown-list-styling {
+  @apply list-inside;
+  @apply markdown-p-spacing;
+}
+
+.markdown:last-child {
+  @apply mb-0;
 }
 
 .markdown h1 {
-  @apply mb-4 text-4xl font-header;
+  @apply mb-4;
+  @apply text-4xl;
+  @apply font-header;
 }
 
 .markdown h2 {
-  @apply mt-6 text-3xl font-header;
+  @apply mt-6;
+  @apply text-3xl;
+  @apply font-header;
 }
 
 .markdown h3 {
-  @apply mt-4 text-2xl font-header;
+  @apply mt-4;
+  @apply text-2xl;
+  @apply font-header;
 }
 
 .markdown h4 {
-  @apply mt-2 text-xl font-header;
+  @apply mt-2;
+  @apply text-xl;
+  @apply font-header;
 }
 
 .markdown h5 {
-  @apply text-lg font-header;
+  @apply text-lg;
+  @apply font-header;
 }
 
 .markdown h6 {
-  @apply text-base font-header mb-4;
+  @apply text-base;
+  @apply font-header;
+  @apply mb-4;
   margin-top: -1em;
 }
 
+/* Highlighting styling */
 .markdown em {
   @apply italic;
 }
-
 .markdown strong {
   @apply font-bold;
 }
-
 .markdown del {
   @apply line-through;
 }
 
 .markdown a {
-  @apply underline text-primary-p-20;
+  @apply underline;
+  @apply text-primary-p-20;
 }
 
 .markdown .no-style-a {
-  @apply no-underline text-black !important;
+  @apply no-underline;
+  color: black !important;
 }
 
+/* Code/Verbatim styling */
 .markdown pre {
-  @apply p-4 text-xl font-verb overflow-x-scroll;
+  @apply p-4;
+  @apply text-lg;
+  @apply markdown-p-spacing;
+  @apply font-mono;
+}
+.markdown code {
+  @apply px-1;
+  @apply font-mono;
 }
 
 .markdown blockquote::before {
   content: ">";
   left: 0;
-  @apply absolute text-xl font-verb text-primary-p-20;
+  @apply absolute;
+  @apply text-xl;
+  @apply font-verb;
+  @apply text-primary-p-20;
 }
 .markdown blockquote {
-  @apply py-4 mb-4 pl-12 border-2 border-l-0 border-r-0 font-nav-links border-primary-p-20;
+  @apply py-4;
+  @apply mb-4;
+  @apply pl-12;
+  @apply border-2;
+  @apply border-l-0;
+  @apply border-r-0;
+  @apply font-nav-links;
+  @apply border-primary-p-20;
 }
+
+/* List styling */
+.markdown ul {
+    @apply markdown-list-styling;
+    @apply list-disc;
+}
+.markdown ol {
+    @apply markdown-list-styling;
+    @apply list-decimal;
+}
+.markdown ul li > ul {
+    @apply ml-4;
+    @apply mb-0;
+}
+.markdown ol li > ol {
+    @apply ml-4;
+    @apply mb-0;
+}
+.markdown ol li p {
+    @apply inline;
+}
+
+/* Img styling */
 .markdown img {
   @apply max-w-full;
 }
-.markdown p:last-of-type {
-    @apply mb-0;
-}
+
+/* Table Styling */
 .markdown p {
-    @apply mb-4;
+    @apply markdown-p-spacing;
+}
+
+/* Table Styling */
+.markdown table {
+    @apply border-2;
+    @apply border-b-0;
+    @apply border-black;
+}
+.markdown table thead {
+    @apply border-b-4;
+    @apply border-black;
+}
+.markdown table tbody tr {
+    @apply border-b-2;
+    @apply border-black;
+}
+.markdown table tr th {
+    @apply border-r-2;
+    @apply border-black;
+    @apply px-1;
+}
+.markdown table tr th:last-of-type {
+    @apply border-r-0;
+}
+.markdown table tr td {
+    @apply border-r-2;
+    @apply border-black;
+    @apply px-1;
+}
+.markdown table tr td:last-of-type {
+    @apply border-r-0;
+}
+
+/* Footnote Styling */
+.markdown .footnote-definition p {
+    @apply inline;
 }
