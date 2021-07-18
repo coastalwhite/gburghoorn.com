@@ -1,11 +1,12 @@
 +++
-title = "We are constantly and unknowingly catching Buses and that's a good thing"
+title = "We are constantly and unknowingly catching buses and that's a good thing"
 description = """\
 Life contains many time patterns. The pattern which occurs when \
 we (attempt) to catch a bus happens to be one of the most frequent and useful ones for \
 managing our time."""
 
 date = 2021-07-18
+updated = 2021-07-18
 
 [taxonomies]
 tags = ["patterns", "everyday life", "time management"]
@@ -58,13 +59,12 @@ impossible to get a record one hundredth of a second faster than him. Similarly,
 he was unable to be one hundredth of a second faster than the previous record.
 It turned out that, as can be seen in {{ figure_ref(n=1) }}, that you could only
 finish every level every ~0.35 seconds. Let us assume that it is exactly 0.35
-seconds. This means it will not matter if you finish a level in 17 seconds and
-510 milliseconds or in 17 seconds and 840 milliseconds because you would start
-the next level at the same time. This might not seem like a big deal, but to
-speedrunners &mdash; to which every millisecond was a massive deal &mdash; this
-was a giant hurdle to cross.  Similarly, if you finish the level in 17 seconds
-and 490 milliseconds instead of 17 seconds and 510 milliseconds, you would
-actually not gain 20 milliseconds but 350 milliseconds. 
+seconds. This means it will not matter if you finish a level in 17.51 seconds or
+in 17.84 seconds because you would start the next level at the same time. This
+might not seem like a big deal, but to speedrunners &mdash; to which every
+millisecond is a massive deal &mdash; this was a giant hurdle to cross.
+Similarly, if you finish the level in 17.49 seconds instead of 17.51 seconds,
+you would actually not gain 20 milliseconds but 350 milliseconds. 
 
 {% figure(href='./mario-framerule.gif', alt='Super Mario Bros Framerule') %}
 A visualization of the Super Mario Bros "Framerule" by <em>u/Flibidy_Dibidy</em> on
@@ -94,7 +94,7 @@ job, where you clock in when you start working and clock out when you stop
 working. Here, if you work 5 minutes, you will earn 5 times as much as working 1
 minute. This can be seen in {{ figure_ref(n=2) }}. Another relationship &mdash;
 in fact one of the most common relationships &mdash; is diminishing returns.  A
-term copied from economics, which in essence comes down to &ldquo;the more time
+term borrowed from economics, which in essence comes down to &ldquo;the more time
 you invest, the harder it becomes to gain value&rdquo;. It can be seen as you
 over time getting tired. Similarly, one of the best examples is the value of
 your work over time whilst you are getting tired. A graphical representation can
@@ -139,7 +139,7 @@ occasions. Just being aware of when this pattern happens to you can save you
 time. If you know you are going to miss the bus, don't rush to the bus stop just
 to wait there for 15 minutes. Instead, you might clean out the dishwasher then
 rush to the bus stop. If you see that you will not make it for the next interval
-or even that you might not make it, it might be better to consider doing a
+or even that you might not make it at all, it might be better to consider doing a
 different task. Most of the time, these will be short mindless tasks which you
 have either been putting off or you had planned for later. In both cases, you
 are saving time as opposed to waiting at the bus-stop, or at least not losing
@@ -201,11 +201,11 @@ drawn from his style of living. As said, we often have to go to the extremes to
 learn lessons about the modest.
 
 There are many ways we might manage our time and effort. And for many people,
-minimizing time and/or effort is an (indirect) goal in our lives. If we are more
-aware of how prevalent *&ldquo;bus stops&rdquo;* are in our lives, this can help
-minimize time and effort expended. Similarly, if we actively search for
-opportunities to form these bus stops in our lives, we will minimize these
-factors even further so. Possibly, reducing stress and increasing the time and
-energy you have available for more important things. So slow down and catch the
-next bus and afterwards decide to spend a bit more time before you grab your
-next bus.
+minimizing time and/or effort spent on tasks is an (indirect) goal in our lives.
+If we are more aware of how prevalent *&ldquo;bus stops&rdquo;* are in our
+lives, this can help minimize time and effort expended. Similarly, if we
+actively search for opportunities to form these bus stops in our lives, we will
+minimize these factors even further so. Possibly, reducing stress and increasing
+the time and energy you have available for more important things. So slow down
+and catch the next bus and afterwards decide to spend a bit more time before you
+grab your next bus.
