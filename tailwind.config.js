@@ -1,10 +1,10 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true
+    purgeLayersByDefault: true,
   },
   purge: ["./templates/**/*.html"],
   theme: {
@@ -13,7 +13,7 @@ module.exports = {
         content: ["Georgia", ...defaultTheme.fontFamily.serif],
         "nav-links": ["Lato", ...defaultTheme.fontFamily.serif],
         verb: ["Jetbrains Mono", ...defaultTheme.fontFamily.mono],
-        header: ["Overpass Mono", ...defaultTheme.fontFamily.mono]
+        header: ["Overpass Mono", ...defaultTheme.fontFamily.mono],
       },
       spacing: {
         "2-screen-h": "200vh",
@@ -23,7 +23,7 @@ module.exports = {
         "1/2-screen-h": "50vh",
         "1/2-screen-w": "50vw",
         "1/4-screen-h": "25vh",
-        "1/4-screen-w": "25vw"
+        "1/4-screen-w": "25vw",
       },
       colors: {
         "primary-m-90": "#FAF6FB",
@@ -63,10 +63,10 @@ module.exports = {
         "secondary-p-60": "#665637",
         "secondary-p-70": "#4C4029",
         "secondary-p-80": "#332B1B",
-        "secondary-p-90": "#19150E"
-      }
-    }
+        "secondary-p-90": "#19150E",
+      },
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };
