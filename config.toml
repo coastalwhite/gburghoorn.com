@@ -7,6 +7,9 @@ default_language = "en"
 
 compile_sass = false
 
+generate_feed = true
+feed_filename = "rss.xml"
+
 build_search_index = true
 smart_punctuation = true
 

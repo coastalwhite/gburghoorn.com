@@ -37,13 +37,12 @@
 
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ current_url }}" />
+    <meta property="og:url" content="{{ current_url | default(value="https://gburghoorn.com/") }}" />
     <meta property="og:title" content="{{ meta_title }}" />
     <meta property="og:description" content="{{ meta_description }}" />
     <meta property="og:image" content="{{get_url(path=img_path,cachebust=true)}}" />
 
-    <link rel="alternate" type="application/rss+xml" title="RSS feed for
-    gburghoorn.com" href="{{ config.base_url | safe }}/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path="rss.xml") }}" />
 
     <!-- Stylesheets -->
     <link href="{{get_url(path='styles/styles.css',cachebust=true)}}" rel="stylesheet" type="text/css" />
