@@ -78,5 +78,4 @@ Managing interactive vector graphics in WASM
 
 # Contact
 
-If you want/need to contact me, you can reach me at
-[me@gburghoorn.com](mailto:me@burghoorn.com)
+If you want/need to contact me, you can reach me at {{ mailto() }}.
