@@ -1,14 +1,13 @@
 +++
 title = "About Me"
 date = 2021-03-31
-description = " Hi! My name is Gijs Burghoorn. I am a student at Leiden University, the Netherlands, who loves competitive swimming, coaching, reading, contributing to open-source software and talking about the impact of science."
+description = "A short introduction about who I am"
 +++
 
-Hi! My name is Gijs Burghoorn. {% note(txt="View Leiden, The
-Netherlands on Google Maps", href="https://goo.gl/maps/ZqsbLSUJccd9cqEo6", type="location")
-%}I am a student at Leiden University,{% end %} the
-Netherlands, who loves competitive swimming, coaching, reading, contributing to
-open-source software and talking about the impact of science.
+Hi! My name is Gijs Burghoorn. I am a dutch student at Université Grenoble
+Alpes, France{{ note(txt="View Grenoble, France on Google Maps", href="https://www.openstreetmap.org/#map=13/45.1842/5.6938", type="location") }}, who loves competitive swimming, coaching, reading, contributing to open-source software and talking about the impact of science.
+
+<!-- more -->
 
 ![Mugshot](../imgs/mugshot.png)
 
@@ -49,9 +48,9 @@ Leiden. A link to which can be found [here](https://www.swiminleiden.nl/).
 
 ## Open source
 
-{% note(txt="What is open source",
-href="https://opensource.com/resources/what-open-source", type="websitesource") %}Open source allows for unrivalled transparency and, although a bit debatable,
-trust in the correctness.{% end %} Open source also allows people to crowdsource production of products. This allows individuals to help with disclose issues and make suggestion. My personal projects are (almost) always open source and I try to help with other projects.
+Open source allows for unrivalled transparency and, although a bit debatable,
+trust in the correctness. {{ note(txt="What is open source",
+href="https://opensource.com/resources/what-open-source", type="websitesource") }}Open source also allows people to crowdsource production of products. This allows individuals to help with disclose issues and make suggestion. My personal projects are (almost) always open source and I try to help with other projects.
 
 ## Science communication
 

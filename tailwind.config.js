@@ -9,6 +9,9 @@ module.exports = {
   purge: ["./templates/**/*.html"],
   theme: {
     extend: {
+      fontSize: {
+        'no': '0rem',
+      },
       fontFamily: {
         content: ["Georgia", ...defaultTheme.fontFamily.serif],
         "nav-links": ["Lato", ...defaultTheme.fontFamily.serif],
