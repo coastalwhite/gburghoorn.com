@@ -13,13 +13,13 @@ feed_filename = "rss.xml"
 build_search_index = true
 smart_punctuation = true
 
+taxonomies = [
+    { name = "tags", feed = true, render = false },
+]
+
 [markdown]
 highlight_code = true
 highlight_theme = "base16-ocean-light"
-
-taxonomies = [
-    {name = "tags", feed = true}
-]
 
 [extra]
 keywords = ["computers", "security", "math"]

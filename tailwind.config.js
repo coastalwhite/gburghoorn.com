@@ -6,7 +6,7 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ["./templates/**/*.html"],
+  content: ["./templates/**/*.html"],
   theme: {
     extend: {
       fontSize: {

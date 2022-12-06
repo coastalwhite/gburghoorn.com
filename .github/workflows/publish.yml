@@ -8,7 +8,6 @@ on:
   push:
     branches:
       - main
-      
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -22,14 +21,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - run: npm install
-      - run: export NODE_ENV=production
-      - run: npm run build
 
-      - run: curl -s -L https://github.com/getzola/zola/releases/download/v0.13.0/zola-v0.13.0-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
+      # Download and run TailwindCSS
+      - name: TailwindCSS Build
+      - run: curl -sLO https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.2.4/download/tailwindcss-linux-x64
+      - run: chmod +x tailwindcss-linux-x64
+      - run: ./tailwindcss-linux-x64 -i styles/styles.scss -o static/styles/styles.css --minify
+
+      # Download and run Zola
+      - name: Zola Build
+      - run: curl -s -L https://github.com/getzola/zola/releases/download/v0.16.1/zola-v0.16.1-x86_64-unknown-linux-gnu.tar.gz | sudo tar xvzf - -C /usr/local/bin
       - run: zola build
 
       - name: Copy Files to Server
