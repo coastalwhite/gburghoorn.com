@@ -1,13 +1,17 @@
 +++
 title = "About Me"
 date = 2021-03-31
-description = "A short introduction about who I am"
+description = """
+Hi! My name is Gijs Burghoorn. I am a dutch student at Université Grenoble
+Alpes, France, who loves competitive swimming, coaching, reading, contributing
+to open-source software and talking about the impact of science.
+"""
 +++
 
 Hi! My name is Gijs Burghoorn. I am a dutch student at Université Grenoble
-Alpes, France{{ note(txt="View Grenoble, France on Google Maps", href="https://www.openstreetmap.org/#map=13/45.1842/5.6938", type="location") }}, who loves competitive swimming, coaching, reading, contributing to open-source software and talking about the impact of science.
-
-<!-- more -->
+Alpes, France, who loves competitive swimming, coaching, reading, contributing
+to open-source software and talking about the impact of science. Currently, I am
+doing a master thesis microarchitectural emulation.
 
 ![Mugshot](../imgs/mugshot.png)
 
@@ -16,8 +20,8 @@ Alpes, France{{ note(txt="View Grenoble, France on Google Maps", href="https://w
 Following my high school/college education, I decided to start with a bachelor
 of science in the joint computer science and mathematics program. After two
 years of following both programs, I had a sense of direction within the fields
-and decided to speed up going for a Master. Currently, I am in my Masters in
-Informatics.
+and decided to speed up going for a Master. I finished a Master in informatics
+in Grenoble, France and started on a Cybersecurity master.
 
 ## Swimming
 
