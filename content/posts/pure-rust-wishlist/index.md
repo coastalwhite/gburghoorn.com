@@ -26,7 +26,8 @@ that depends on a crate that is not pure rust, cannot be pure rust.
 
 ## Why would we want a pure Rust crate over a wrapper to an existent library?
 
-There are several reasons to want a pure Rust crate over wrappers to an existent
+Apart for the usual safety and performance Rust provides, there are several reasons
+to want a pure Rust crate over wrappers to an existent
 library. The tldr here is you just want to `cargo add` a crate and have everything
 work as expected. To go into a bit more depth, there are three main reasons to
 want a pure Rust crate: developer ergonomics, user ergonomics and guarantees
@@ -172,7 +173,7 @@ chunk of security critical code. Again, while the two implementations provide
 mostly the same interface, in most cases you cannot take a configuration file
 that works for Linux-PAM, put it on OpenPAM and expect it to work.  So any new
 implementation of needs to pick its poison. Do you pick the probably better
-implemented but widely used OpenPAM. Or do you use Linux-PAM which is a bit of a
+implemented but less widely used OpenPAM. Or do you use Linux-PAM which is a bit of a
 mess, but used a lot more.
 
 Then, there is the problem that PAM is almost always used as a shared library.
