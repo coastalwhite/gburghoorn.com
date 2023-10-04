@@ -21,7 +21,8 @@ Following my high school/college education, I decided to start with a bachelor
 of science in the joint computer science and mathematics program. After two
 years of following both programs, I had a sense of direction within the fields
 and decided to speed up going for a Master. I finished a Master in informatics
-in Grenoble, France and started on a Cybersecurity master.
+and Cybersecurity in Grenoble, France. Currently, I am busy with a PhD at the
+TU Delft, the Netherlands.
 
 ## Swimming
 
