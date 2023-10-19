@@ -2,53 +2,33 @@
 title = "About Me"
 date = 2021-03-31
 description = """
-Hi! My name is Gijs Burghoorn. I am a dutch student at Université Grenoble
-Alpes, France, who loves competitive swimming, coaching, reading, contributing
-to open-source software and talking about the impact of science.
+Hi! My name is Gijs Burghoorn. I am a PhD candidate at the TU Delft, the
+Netherlands, who is passionate about Rust, Hardware Design, Security and
+contributing to open-source software.
 """
 +++
 
-Hi! My name is Gijs Burghoorn. I am a dutch student at Université Grenoble
-Alpes, France, who loves competitive swimming, coaching, reading, contributing
-to open-source software and talking about the impact of science. Currently, I am
-doing a master thesis microarchitectural emulation.
+Hi! My name is Gijs Burghoorn. I am a PhD candidate at the TU Delft, the
+Netherlands, who is passionate about Rust, Hardware Design, Security and
+contributing to open-source software.
 
 ![Mugshot](../imgs/mugshot.png)
 
-## Studies
+## Education
 
-Following my high school/college education, I decided to start with a bachelor
-of science in the joint computer science and mathematics program. After two
-years of following both programs, I had a sense of direction within the fields
-and decided to speed up going for a Master. I finished a Master in informatics
-and Cybersecurity in Grenoble, France. Currently, I am busy with a PhD at the
-TU Delft, the Netherlands.
+Over the years, I studied with a primary focus on computer security, software
+design and cryptography. Below is an overview of all the major parts of my
+education.
 
-## Swimming
-
-For a long time now I have been swimming both competitively and as a way to
-unwind. I love doing both indoor and outdoor swimming and my competitive time
-can be found [here](https://m.swimtimes.nl/nl/athlete/386908). I have swam
-competitively for [AquaNovio](https://www.aquanovio.nl/) in Nijmegen (the
-Netherlands), [ZVL](https://www.zvl-1886.nl/) in Leiden (the Netherlands) and
-[AquaMania](http://www.aquamanialeiden.nl/) also in Leiden. My swimming
-specialization lays within short distance freestyle.
-
-<img src="../imgs/diving.gif" width="320px" alt="Diving" />
-
-### Coaching
-
-Next to swimming myself, I also coach others. I have been training both junior
-9-17 years old) and senior (18+ years old) swimmers at
-[ZVL](https://www.zvl-1886.nl/) for 2 years now. Furthermore, I provided the
-trainings on land for the university student's water-sports association in
-Leiden: [AquaMania](http://www.aquamanialeiden.nl/).
-
-### Organizing
-
-Furthermore, in 2019-2020 I was the secretary while organisation of the SwimIn
-Leiden 2020 took place: a open-water swimming competition through the canals of
-Leiden. A link to which can be found [here](https://www.swiminleiden.nl/).
+| Year        | University                | Program             | Note                                        |
+|-------------|---------------------------|---------------------|---------------------------------------------|
+| 2018 - 2020 | Leiden University         | Mathematics         | *Not Concluded*                             |
+| 2018 - 2021 | Leiden University         | Computer Science    |                                             |
+| 2021 - 2022 | Université Grenoble Alpes | Informatics         |                                             |
+| 2022 - 2022 | TIMA                      | Research Intern     | Fault Injection through Clock Glitching     |
+| 2022 - 2023 | Université Grenoble Alpes | Cybersecurity       |                                             |
+| 2023 - 2023 | TIMA                      | Research Intern     | Microarchitectural Emulation & Cache Timing |
+| 2023 - 2027 | TU Delft                  | PhD Candidate       | RISC-V Hardware Security                    |
 
 ## Open source
 
@@ -59,28 +39,54 @@ Open source also allows people to crowdsource production of products. This
 allows individuals to help with disclose issues and make suggestion. My personal
 projects are (almost) always open source and I try to help with other projects.
 
-## Science communication
+Below is a list of a few of my notable projects. Apart from these projects, I
+try to help and contribute to other crates when I am able to.
 
-I would say that educating is one of the most beneficial whilst still retaining
-a longstanding significance to society. This, together with my passion for
-computer science and mathematics, leads me to a desire to educate about computer
-science and mathematics topics suited to the public. Especially, the topics with
-a greater societal impact are of interest to me. For the past 6 years of my
-life, I have been getting education experience in lecturing, one-on-one tutoring
-and writing/improving documentation.  Altogether, this has been an extremely
-enjoyable experience so far, and I wish to continue on this path.
+### Lemurs --- Terminal Login Manager
 
-<!--# Projects
+[GitHub](https://github.com/coastalwhite/lemurs)
 
-Here are some my projects.
+Lemurs is a *Terminal User Interface* (TUI) [Display/Login Managers][lm] written
+in Rust that works on most GNU/Linux and BSD distributions. It can work both
+*with or without* SystemD.
 
-## WasmSVGGraphics
+[lm]: https://wiki.archlinux.org/title/Display_manager
 
-Managing interactive vector graphics in WASM 
+### WaveDrom-rs --- Beautiful Programmatic Timing Diagrams in Rust
 
-## simpleserial-rs
+[Demo](https://gburghoorn.com/wavedrom/) |
+[GitHub](https://github.com/coastalwhite/wavedrom-rs)
 
-## Honorable mentions-->
+The `wavedrom-rs` crate provides an interface to shape beautiful [Digital Timing
+Diagrams][dtd] into an [SVG][svg]. It is almost completely compatible with the
+[WaveDrom][wavedrom-js] project. It can be merged into document build tools,
+continuous integration or be used as a one off to generate beautiful
+diagrams.
+
+[dtd]: https://en.wikipedia.org/wiki/Digital_timing_diagram
+[svg]: https://en.wikipedia.org/wiki/SVG
+[wavedrom-js]: https://wavedrom.com/
+
+### Riscvonomicon --- The Rust for RISC-V reference book
+
+[Link](https://riscvonomicon.github.io/book) |
+[GitHub](https://github.com/riscvonomicon/book)
+
+The Riscvonomicon (pronounced "risk five o-nomicon") provides a reference for
+using the RISC-V instruction set and the Rust programming language together. It
+contains information about:
+
+* Utilizing Rust and RISC-V specific crates, tools and environments
+* Building, testing, fuzzing and formally verify code for RISC-V written in Rust
+* Utilizing RISC-V instructions, intrinsics and extensions in Rust
+
+### Rust RISC-V Intrinsics
+
+[Tracking Issue](https://github.com/rust-lang/rust/issues/114544)
+
+Implementation of intrinsics for RISC-V operations in the Rust standard library.
+This work improves the speed, binary size and user experience of RISC-V and
+Rust.
 
 # Contact
 
