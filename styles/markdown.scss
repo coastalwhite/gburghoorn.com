@@ -135,6 +135,7 @@
 /* Table Styling */
 .markdown p {
     @apply markdown-p-spacing;
+    @apply text-justify;
 }
 
 /* Table Styling */

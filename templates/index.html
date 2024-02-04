@@ -35,7 +35,7 @@
         {% if post.taxonomies.tags %}
         {{ macros::showtags(tags=post.taxonomies.tags) }}
         {% endif %}
-        <div class="my-2 italic">
+        <div class="my-2 italic text-justify">
             {% if post.description %}
             {{ post.description | trim | safe }}
             {% endif %}
