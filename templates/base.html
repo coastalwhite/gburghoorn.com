@@ -42,10 +42,13 @@
     <meta property="og:description" content="{{ meta_description }}" />
     <meta property="og:image" content="{{get_url(path=img_path,cachebust=true)}}" />
 
-    <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path="rss.xml") }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ config.title }}" href="{{ get_url(path='rss.xml') }}" />
 
     <!-- Stylesheets -->
     <link href="{{get_url(path='styles/styles.css',cachebust=true)}}" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{get_url(path='svg/favicon.svg',cachebust=true)}}" />
 
     <!-- Library Scripts -->
     <script type="text/javascript"
