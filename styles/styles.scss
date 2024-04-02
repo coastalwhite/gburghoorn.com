@@ -4,6 +4,19 @@
 
 @import "./fonts.scss";
 
+.figure {
+    img {
+        margin: 0px auto;
+    }
+
+    figcaption {
+        padding: 0px 2em;
+        @apply text-sm;
+    }
+
+    @apply mb-4;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

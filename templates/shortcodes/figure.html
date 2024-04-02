@@ -1,4 +1,4 @@
-<p id="figure-{{ nth }}">
-    <img src="{{ href }}" alt="{{ alt }}" />
-    <span class="font-header text-sm"><em>Figure {{ nth }}: {{ body | safe}}</em></span>
-</p>
+<figure class="figure" id="figure-{{ nth }}">
+    <img alt="{{ alt }}" src="{{ href | safe}}">
+    <figcaption><em>Figure {{ nth }}: {{body | safe}}</em></figcaption>
+</figure>
