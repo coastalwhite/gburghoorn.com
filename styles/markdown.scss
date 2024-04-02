@@ -172,4 +172,5 @@
 /* Footnote Styling */
 .markdown .footnote-definition p {
     @apply inline;
+    @apply text-sm;
 }
