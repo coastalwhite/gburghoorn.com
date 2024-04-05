@@ -81,6 +81,7 @@
   @apply text-lg;
   @apply markdown-p-spacing;
   @apply font-mono;
+  @apply overflow-x-scroll;
 }
 .markdown code {
   @apply px-1;
