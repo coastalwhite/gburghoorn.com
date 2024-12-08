@@ -1,16 +1,14 @@
 +++
 title = "About Me"
-date = 2021-03-31
+date = 2024-12-08
 description = """
-Hi! My name is Gijs Burghoorn. I am a PhD candidate at the TU Delft, the
-Netherlands, who is passionate about Rust, Hardware Design, Security and
-contributing to open-source software.
+Hi! My name is Gijs Burghoorn. I am passionate about Hardware Design, Security,
+Electronic Design Automation and contributing to open-source software.
 """
 +++
 
-Hi! My name is Gijs Burghoorn. I am a PhD candidate at the TU Delft, the
-Netherlands, who is passionate about Rust, Hardware Design, Security and
-contributing to open-source software.
+Hi! My name is Gijs Burghoorn. I am passionate about Hardware Design, Security,
+Electronic Design Automation and contributing to open-source software.
 
 ![Mugshot](../imgs/mugshot.png)
 
@@ -28,19 +26,21 @@ education.
 | 2022 - 2022 | TIMA                      | Research Intern     | Fault Injection through Clock Glitching     |
 | 2022 - 2023 | Université Grenoble Alpes | Cybersecurity       |                                             |
 | 2023 - 2023 | TIMA                      | Research Intern     | Microarchitectural Emulation & Cache Timing |
-| 2023 - 2027 | TU Delft                  | PhD Candidate       | RISC-V Hardware Security                    |
+| 2023 - 2024 | TU Delft                  | PhD Candidate       | *Not Concluded*                             |
 
-## Open source
 
-Open source allows for unrivalled transparency and, although a bit debatable,
-trust in the correctness. {{ note(txt="What is open source",
-href="https://opensource.com/resources/what-open-source", type="websitesource") }}
-Open source also allows people to crowdsource production of products. This
-allows individuals to help with disclose issues and make suggestion. My personal
-projects are (almost) always open source and I try to help with other projects.
+## Work
 
-Below is a list of a few of my notable projects. Apart from these projects, I
-try to help and contribute to other crates when I am able to.
+After a brief stint at the TU Delft as a PhD candidate, I started working at
+[Polars] as a Rust Software Engineer. Here, I spend most my time optimizing
+low-level code, fixing reported problems and extending the functionality to
+support a wider range of usecases. The big benefit of working at Polars is that
+almost all the work I do is open source. You can find that
+[here](https://github.com/pola-rs/polars).
+
+Below are some other open source projects that I worked on.
+
+[Polars]: https://pola.rs/
 
 ### Lemurs --- Terminal Login Manager
 
@@ -66,27 +66,6 @@ diagrams.
 [dtd]: https://en.wikipedia.org/wiki/Digital_timing_diagram
 [svg]: https://en.wikipedia.org/wiki/SVG
 [wavedrom-js]: https://wavedrom.com/
-
-### Riscvonomicon --- The Rust for RISC-V reference book
-
-[Link](https://riscvonomicon.github.io/book) |
-[GitHub](https://github.com/riscvonomicon/book)
-
-The Riscvonomicon (pronounced "risk five o-nomicon") provides a reference for
-using the RISC-V instruction set and the Rust programming language together. It
-contains information about:
-
-* Utilizing Rust and RISC-V specific crates, tools and environments
-* Building, testing, fuzzing and formally verify code for RISC-V written in Rust
-* Utilizing RISC-V instructions, intrinsics and extensions in Rust
-
-### Rust RISC-V Intrinsics
-
-[Tracking Issue](https://github.com/rust-lang/rust/issues/114544)
-
-Implementation of intrinsics for RISC-V operations in the Rust standard library.
-This work improves the speed, binary size and user experience of RISC-V and
-Rust.
 
 # Contact
 
