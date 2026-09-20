@@ -27,20 +27,37 @@ education.
 | 2022 - 2023 | Université Grenoble Alpes | Cybersecurity       |                                             |
 | 2023 - 2023 | TIMA                      | Research Intern     | Microarchitectural Emulation & Cache Timing |
 | 2023 - 2024 | TU Delft                  | PhD Candidate       | *Not Concluded*                             |
+| 2024 - 2025 | Polars                    | Software Engineer   |                                             |
+| 2025 - 2029 | Radboud University        | PhD Candidate       |                                             |
 
 
-## Work
+## Research
 
-After a brief stint at the TU Delft as a PhD candidate, I started working at
-[Polars] as a Rust Software Engineer. Here, I spend most my time optimizing
-low-level code, fixing reported problems and extending the functionality to
-support a wider range of usecases. The big benefit of working at Polars is that
-almost all the work I do is open source. You can find that
-[here](https://github.com/pola-rs/polars).
+I currently research Pre-silicon Side-Channel Analysis at part of the _Digital
+Security_ (DiS) at the Radboud University. My focus is on models and simulation
+of power and electromagnetic side-channels throughout the digital design flow.
 
-Below are some other open source projects that I worked on.
+As part of my research, I have written
+[Vogls](https://github.com/coastalwhite/vogls) with a Rust library for Verilog
+simulation focused on simulation throughput, embedability, usage from _Register
+Transfer Level_ (RTL) to full-timing gate-level.
 
-[Polars]: https://pola.rs/
+## Publications
+
+- 2024 --- Cross-layer analysis of clock glitch fault injection while fetching variable-length instructions --- Ihab Alshaer, Gijs Burghoorn, Brice Colombier, Christophe Deleuze, Vincent Beroulle, Paolo Maistri --- (Springer)[https://link.springer.com/article/10.1007/s13389-024-00352-6]
+- 2026 --- Vogls: a Fast Interactive Full-timing Simulator for Pre-silicon Power Side-Channel Analysis --- Gijs Burghoorn, Ileana Buhan, Lejla Batina --- (Arxiv)[https://arxiv.org/abs/2607.15782]
+
+## Miscellaneous projects
+
+### Polars --- Extremely fast DataFrame library
+
+[GitHub](https://github.com/pola-rs/polars)
+
+In a previous job, I worked on Polars which is an extremely fast DataFrame
+library written in Rust. My work here included a major rewrite of the Parquet
+encoding and decoding, a lot of performance work, reworks of several planning
+stages, reworks of group-by aggregations, many implementations of streaming
+operations and general maintenance.
 
 ### Lemurs --- Terminal Login Manager
 
