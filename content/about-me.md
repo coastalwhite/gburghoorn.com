@@ -44,8 +44,8 @@ Transfer Level_ (RTL) to full-timing gate-level.
 
 ## Publications
 
-- 2024 --- Cross-layer analysis of clock glitch fault injection while fetching variable-length instructions --- Ihab Alshaer, Gijs Burghoorn, Brice Colombier, Christophe Deleuze, Vincent Beroulle, Paolo Maistri --- (Springer)[https://link.springer.com/article/10.1007/s13389-024-00352-6]
-- 2026 --- Vogls: a Fast Interactive Full-timing Simulator for Pre-silicon Power Side-Channel Analysis --- Gijs Burghoorn, Ileana Buhan, Lejla Batina --- (Arxiv)[https://arxiv.org/abs/2607.15782]
+- 2024 --- Cross-layer analysis of clock glitch fault injection while fetching variable-length instructions --- Ihab Alshaer, Gijs Burghoorn, Brice Colombier, Christophe Deleuze, Vincent Beroulle, Paolo Maistri --- [Springer](https://link.springer.com/article/10.1007/s13389-024-00352-6)
+- 2026 --- Vogls: a Fast Interactive Full-timing Simulator for Pre-silicon Power Side-Channel Analysis --- Gijs Burghoorn, Ileana Buhan, Lejla Batina --- [Arxiv](https://arxiv.org/abs/2607.15782)
 
 ## Miscellaneous projects
 
